@@ -7,7 +7,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import org.freedu.firestoremvvm.model.Student
 
-class StudentAdaptar(private val studentList: List<Student>):
+class StudentAdaptar(var studentList: List<Student>):
     RecyclerView.Adapter<StudentAdaptar.StudentViewHolder>() {
 
 
