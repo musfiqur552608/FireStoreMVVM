@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginTop="10dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_marginEnd="10dp"
+            android:id="@+id/studentIdTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Student Id"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/editBtn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/studentNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/studentIdTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/studentIdTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentIdTxt" />
+
+        <TextView
+            android:id="@+id/studentEmailTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Email"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/studentNameTxt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/studentNameTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentNameTxt" />
+
+        <TextView
+            android:id="@+id/studentSectionTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Section"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/studentEmailTxt"
+            app:layout_constraintStart_toStartOf="@+id/studentEmailTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentEmailTxt" />
+
+        <TextView
+            android:id="@+id/studentAddressTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Address"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/studentSectionTxt"
+            app:layout_constraintStart_toStartOf="@+id/studentSectionTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentSectionTxt" />
+
+        <TextView
+            android:id="@+id/studentPhoneNoTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Phone No"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/studentAddressTxt"
+            app:layout_constraintStart_toStartOf="@+id/studentAddressTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentAddressTxt" />
+
+        <TextView
+            android:id="@+id/studentAgeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Student Age"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/studentPhoneNoTxt"
+            app:layout_constraintStart_toStartOf="@+id/studentPhoneNoTxt"
+            app:layout_constraintTop_toBottomOf="@+id/studentPhoneNoTxt" />
+
+        <ImageButton
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="52dp"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/pencil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/studentIdTxt" />
+
+        <ImageButton
+            android:id="@+id/deleteBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/editBtn"
+            app:layout_constraintStart_toStartOf="@+id/editBtn"
+            app:layout_constraintTop_toBottomOf="@+id/editBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.cardview.widget.CardView>
